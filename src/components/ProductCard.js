@@ -1,14 +1,15 @@
-import React from "react";
-import ReactStars from "react-rating-stars-component";
-import { Link, useLocation } from "react-router-dom";
-import prodcompare from "../images/prodcompare.svg";
-import wish from "../images/wish.svg";
-import wishlist from "../images/wishlist.svg";
-import watch from "../images/watch.jpg";
-import watch2 from "../images/watch-1.avif";
-import addcart from "../images/add-cart.svg";
-import view from "../images/view.svg";
-const ProductCard = (props) => {
+import React from 'react';
+import ReactStars from 'react-rating-stars-component';
+import { Link, useLocation } from 'react-router-dom';
+import prodcompare from '../images/prodcompare.svg';
+import wish from '../images/wish.svg';
+import wishlist from '../images/wishlist.svg';
+import watch from '../images/watch.jpg';
+import watch2 from '../images/watch.jpg';
+// import watch2 from "../images/watch-1.avif";
+import addcart from '../images/add-cart.svg';
+import view from '../images/view.svg';
+const ProductCard = props => {
   const { grid } = props;
   console.log(grid);
   let location = useLocation();
@@ -17,16 +18,16 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname == '/product' ? `gr-${grid}` : 'col-3'
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
-              ? "/product/:id"
-              : location.pathname == "/product/:id"
-              ? "/product/:id"
-              : ":id"
+            location.pathname == '/'
+              ? '/product/:id'
+              : location.pathname == '/product/:id'
+              ? '/product/:id'
+              : ':id'
           }`}
           className="product-card position-relative"
         >
@@ -51,7 +52,7 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+            <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint occaecati cupiditate non
@@ -76,16 +77,16 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname == '/product' ? `gr-${grid}` : 'col-3'
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
-              ? "/product/:id"
-              : location.pathname == "/product/:id"
-              ? "/product/:id"
-              : ":id"
+            location.pathname == '/'
+              ? '/product/:id'
+              : location.pathname == '/product/:id'
+              ? '/product/:id'
+              : ':id'
           }`}
           className="product-card position-relative"
         >
@@ -110,7 +111,7 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+            <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint occaecati cupiditate non

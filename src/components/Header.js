@@ -1,11 +1,11 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import { BsSearch } from "react-icons/bs";
-import compare from "../images/compare.svg";
-import wishlist from "../images/wishlist.svg";
-import user from "../images/user.svg";
-import cart from "../images/cart.svg";
-import menu from "../images/menu.svg";
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { BsSearch } from 'react-icons/bs';
+import compare from '../images/compare.svg';
+import wishlist from '../images/wishlist.svg';
+import user from '../images/user.svg';
+import cart from '../images/cart.svg';
+import menu from '../images/menu.svg';
 const Header = () => {
   return (
     <>
@@ -14,14 +14,14 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
+                Free Shipping Over 100 & Free Returns
               </p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
                 Hotline:
                 <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
+                  +123456789
                 </a>
               </p>
             </div>
